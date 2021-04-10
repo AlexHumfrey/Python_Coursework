@@ -13,11 +13,12 @@ import urllib.request
 # download file from C19PRC Vaccine Hesitancy Data UK website
 print('downloading file')
 url = 'https://osf.io/g2hwn/download'
-urllib.request.urlretrieve(url, '/Users/alexhumfrey/Documents/Loughborough/Semester 2 Modules/Python_Coursework/survey_data.sav')
+filepath = '/Users/alexhumfrey/Documents/Loughborough/Semester 2 Modules/Python_Coursework/survey_data.sav'
+urllib.request.urlretrieve(url, path)
 
 #two variables created dataframe and metadata object
 # data from https://osf.io/g2hwn/
-df, meta = pyreadstat.read_sav("/Users/alexhumfrey/Documents/Loughborough/Semester 2 Modules/Python_Coursework/survey_data.sav")
+df, meta = pyreadstat.read_sav(filepath)
 
 type(df)
 
