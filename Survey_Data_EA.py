@@ -14,7 +14,7 @@ import urllib.request
 print('downloading file')
 url = 'https://osf.io/g2hwn/download'
 filepath = '/Users/alexhumfrey/Documents/Loughborough/Semester 2 Modules/Python_Coursework/survey_data.sav'
-urllib.request.urlretrieve(url, path)
+urllib.request.urlretrieve(url, filepath)
 
 #two variables created dataframe and metadata object
 # data from https://osf.io/g2hwn/
